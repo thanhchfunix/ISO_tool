@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="275.0" prefWidth="300.0" style="-fx-background-color: #d7e612;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label layoutX="15.0" layoutY="14.0" prefHeight="69.0" prefWidth="270.0" text="Phần mềm tự động resize khẩu trang" textAlignment="CENTER" textFill="#3752bf" wrapText="true">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="84.0" layoutY="96.0" mnemonicParsing="false" onAction="#onOpenFolder" text="Mở thư mục">
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="http://icons.iconarchive.com/icons/softskin/series-folder/32/Folder-Season-Pack-icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ProgressBar fx:id="pgTask" layoutX="50.0" layoutY="188.0" prefWidth="200.0" progress="0.0" />
+   </children>
+</AnchorPane>
